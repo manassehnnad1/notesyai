@@ -62,7 +62,25 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+
+    scrollbar-width: thin; 
+    scrollbar-color: var(--secondary) var(--background); 
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded-sm;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4;
   }
 }
