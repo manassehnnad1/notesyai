@@ -8,13 +8,16 @@
  * 
  * Node Modules
  */
+
+import Header from "@/components/Header";
 import { Outlet } from "react-router";
 
 const RootLayout = () => {
   return (
     <>
-        <div>RootLayout</div>
-        <Outlet />
+        <div className="">
+            <Header />
+        </div>
     </>
   );
 };
