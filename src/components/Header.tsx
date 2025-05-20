@@ -12,6 +12,7 @@ import { Link } from "react-router";
 
 
 import Logo from "@/components/Logo";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
@@ -20,6 +21,13 @@ const Header = () => {
             <Link  to='/'>
                 <Logo />
             </Link>
+
+            <div className="">
+                <Button className="rounded-full" >
+                  <Link to='/login'>Sign in</Link>
+
+                </Button>
+            </div>
         </div>
     </header>
   );

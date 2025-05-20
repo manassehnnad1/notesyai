@@ -7,7 +7,7 @@ export default {
   ],
   theme: {
 	fontFamily:{
-		sans:['Manrope', "sans-serif"],
+		sans:["Poppins", "sans-serif"],
 	},
   	extend: {
   		borderRadius: {
