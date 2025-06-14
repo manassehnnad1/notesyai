@@ -16,14 +16,14 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="">
-        <div className="">
+    <header className="fixed top-0 left-0 w-full ">
+        <div className="container h-16 flex justify-between items-center p-4">
             <Link  to='/'>
                 <Logo />
             </Link>
 
-            <div className="">
-                <Button className="rounded-full" >
+            <div className="flex items-center gap-6 ">
+                <Button className="rounded-half" >
                   <Link to='/login'>Sign in</Link>
 
                 </Button>
