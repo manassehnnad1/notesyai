@@ -84,3 +84,6 @@
     @apply mx-auto px-4;
   }
 }
+.font-special{
+  font-family: "Poiret one", monospace;
+}

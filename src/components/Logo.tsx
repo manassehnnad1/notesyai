@@ -13,8 +13,8 @@ const Logo = () => {
     <div className="flex items-center gap-3 font-semibold text-lg ">
       <img src={ logo}
       alt="notecloud"
-      className="w-7 h-7" />
-      notecloud
+      className="w-7 h-7" /><span className="font-special"> notecloud</span>
+     
     </div>
   )
 }

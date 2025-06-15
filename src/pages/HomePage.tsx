@@ -21,12 +21,14 @@ const HomePage = () => {
         <div className="">
           <div className="pt-32 pb-10 space-y-10">
             <h1 className="text-center text-2xl pt-10">
-              Grab Past papers and notes <br /> with <span>[AI precision]</span>
+              Grab Past papers and notes <br /> with <span className="italic font-light text-gray-500">[AI precision]</span>
             </h1>
             <div className="">
               <p className="text-center">Find study papers fast with our smart AI search.</p>
-            <p className="text-center text-sm">Trusted by students of 
+            <p className="text-center text-sm text-gray-500">Trusted by students of 
               <img src="/src/assets/RSU.png" alt="Rivers State University" className="h-6 inline-block ml-2" />
+              <img src="/src/assets/UNP.webp" alt="University of Port-Harcourt" className="h-6 inline-block ml-2" />
+              <img src="/src/assets/CVN.webp" alt="Covenant University" className="h-6 inline-block ml-2" />
             </p>
 
             </div>
