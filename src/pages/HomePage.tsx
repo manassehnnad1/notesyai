@@ -12,6 +12,7 @@ import { Link } from "react-router";
 
 import { Button } from "@/components/ui/button";
 import Head from "@/components/Head";
+import { ArrowRight } from "lucide-react";
 
 const HomePage = () => {
   return (
@@ -33,9 +34,12 @@ const HomePage = () => {
 
             </div>
             
-            <div className="flex justify-center mt-3">
-              <Button asChild size='lg' className="rounded-full ">
-              <Link to='/register'>Get Started</Link>
+            <div className="flex justify-center mt-3 ">
+              <Button asChild size='lg' className="relative overflow-hidden rounded-full group after:bg-white ">
+              <Link to='/register'className="relative flex items-center gap-1 z-10 transition-colors duration-300 group-hover:text-black group-hover:text-white">
+              <span className="k">Get Started</span>
+              <ArrowRight className="ml-2 h-4 w-4 transition-colors duration-300  transform transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
             </Button>
             </div>
             
