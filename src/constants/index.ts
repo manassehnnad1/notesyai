@@ -15,10 +15,11 @@ export const SOCIAL_LINKS = [
         href: '',
         label: 'Email'
     },
-  {
-    href: 'https://x.com/islathebuilder',
-    label: 'X',
-  },
+    {
+      href:'',
+      label:'Telegram'
+    },
+  
   {
     href: 'https://github.com/manassehnnad1',
     label: 'GitHub',
