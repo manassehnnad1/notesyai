@@ -7,7 +7,7 @@ export default {
   ],
   theme: {
 	fontFamily:{
-		sans:["Questrial", "sans-serif"],
+		sans:["Gochi Hand", "sans-serif"],
 	},
   	extend: {
   		borderRadius: {

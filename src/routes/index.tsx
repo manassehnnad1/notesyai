@@ -12,6 +12,8 @@ import { createBrowserRouter } from "react-router";
  */
 import HomePage from "@/pages/HomePage";
 import RegisterPage from "@/pages/RegisterPage";
+import LoginPage from "@/pages/LoginPage";
+import AuthSyncPage from "@/pages/AuthSyncPage";
 
 /**
  * layouts
@@ -36,6 +38,14 @@ const rootRouteChildren: RouteObject[] = [
     {
         path: '/register',
         element: <RegisterPage />,
+    },
+    {
+        path: '/login',
+        element: <LoginPage />,
+    },
+    {
+        path: '/auth-sync',
+        element: <AuthSyncPage />,
     }
 ];
 

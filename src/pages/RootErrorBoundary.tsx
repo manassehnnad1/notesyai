@@ -26,7 +26,7 @@ const RootErrorBoundary = () => {
             </h1>
 
             <p className="text-center mt-2">
-                { isRouteErrorResponse(error) ? '...you can get back and search for study papers':'we\'re working on fixing this issue, please try again in a few minutes' }
+                { isRouteErrorResponse(error) ? '':'we\'re working on fixing this issue, please try again in a few minutes' }
             </p>
             <div className="">
                 <Button asChild>

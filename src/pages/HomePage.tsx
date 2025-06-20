@@ -21,11 +21,11 @@ const HomePage = () => {
       <section>
         <div className="container !px-8 grid grid-cols-1 gap-8 items-center mx-auto">
           <div className="pt-32 pb-10 space-y-4 md:space-y-7 lg:space-y-9">
-            <h1 className="text-center text-2xl pt-10  md:text-2xl lg:text-3xl">
-              Grab Past papers and notes <br /> with <span className="italic font-light text-gray-500">[AI precision]</span>
+            <h1 className="text-center text-2xl pt-10  md:text-2xl lg:text-3xl font-light text-gray-700">
+               Past papers and notes <br /> with <span className=" font-light text-gray-500">[AI precision]</span>
             </h1>
             <div className="">
-              <p className="text-center md:text-lg lg:text-xl">Find study papers fast with our smart AI search.</p>
+              <p className="text-center md:text-lg lg:text-xl font-light text-gray-700">Find study papers fast with our smart AI search.</p>
             <p className="text-center text-sm text-gray-500">Trusted by students of 
               <img src="/src/assets/RSU.png" alt="Rivers State University" className="h-6 inline-block ml-2" />
               <img src="/src/assets/UNP.webp" alt="University of Port-Harcourt" className="h-6 inline-block ml-2" />
