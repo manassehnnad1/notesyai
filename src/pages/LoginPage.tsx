@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 notecloud
+ * @copyright 2025 notesy.ai
  * @license Apache-2.0
  * @description Registration page for the app
  */
@@ -17,7 +17,7 @@ import Head from "@/components/Head";
 const LoginPage = () => {
   return (
     <>
-        <Head  title="Login to notecloud"/>
+        <Head  title="Login to Notesy.ai"/>
         <section>
             <div className="container flex justify-center">
                 <SignIn signUpUrl="/register" />

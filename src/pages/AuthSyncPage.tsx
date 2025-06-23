@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 notecloud
+ * @copyright 2025 notesy.ai
  * @license Apache-2.0
  * @description Sync page after sign up
  */
@@ -17,6 +17,9 @@ const AuthSyncPage = () => {
     if (!isLoaded) return;
 
     if (!isSignedIn) {
+        if (localStorage.getItem('clerkUserId')){
+            localStorage.removeItem('clerkUserId')
+        }
       // If the user is not signed in, redirect to the login page
       navigate('/login');
       return;
@@ -28,7 +31,8 @@ const AuthSyncPage = () => {
     }
   }, [isSignedIn, isLoaded, userId]);
   return (
-    <div>AuthSyncPage</div>
+    <>
+    </>
   )
 }
 

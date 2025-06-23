@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 notecloud
+ * @copyright 2025 notesy.ai
  * @license Apache-2.0
  * @description Assets for the app
  */
@@ -19,6 +19,7 @@ import AuthSyncPage from "@/pages/AuthSyncPage";
  * layouts
  */
 import RootLayout from "@/layouts/RootLayout";
+import AppLayout from "@/layouts/AppLayout";
 
 /**
  * Types
@@ -30,6 +31,7 @@ import type { RouteObject } from "react-router";
  */
 
 import RootErrorBoundary from "@/pages/RootErrorBoundary";
+import App from "@/App";
 const rootRouteChildren: RouteObject[] = [
     {
         index: true,
@@ -55,6 +57,11 @@ const router = createBrowserRouter([{
     errorElement: <RootErrorBoundary />,
     children: rootRouteChildren,
 
-}]);
+},
+{
+    path:'/app',
+    element: <AppLayout />
+}
+]);
 
 export default router;

@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 notecloud
+ * @copyright 2025 notesy.ai
  * @license Apache-2.0
  * @description Assets for the app
  */

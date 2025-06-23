@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 notecloud
+ * @copyright 2025 notesy.ai
  * @license Apache-2.0
  * @description Assets for the app
  */
@@ -17,7 +17,7 @@ import { ArrowRight } from "lucide-react";
 const HomePage = () => {
   return (
     <>
-      <Head title="notecloud - Study papers search with AI precision" />
+      <Head title="Notesy.ai - Study papers search with AI precision" />
       <section>
         <div className="container !px-8 grid grid-cols-1 gap-8 items-center mx-auto">
           <div className="pt-32 pb-10 space-y-4 md:space-y-7 lg:space-y-9">
