@@ -4,10 +4,29 @@
  * @description Registration page for the app
  */
 
+/**
+ * 
+ * Node Modules
+ */
+import { Outlet } from "react-router";
+
+/**
+ * 
+ * Components
+ */
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+
+import AppSidebar from "@/components/AppSidebar";
+
 const AppLayout = () => {
   return (
-    <div>AppLayout</div>
-  )
+    <SidebarProvider>
+      <SidebarTrigger />
+        <div>AppLayout</div>
+      <AppSidebar />
+      <Outlet />
+    </SidebarProvider>
+  );
 }
 
-export default AppLayout
+export default AppLayout;

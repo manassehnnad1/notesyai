@@ -27,7 +27,7 @@ const AuthSyncPage = () => {
     if (isSignedIn) {
         localStorage.setItem('clerkUserId', userId);
 
-        navigate('/app/today');
+        navigate('/app/');
     }
   }, [isSignedIn, isLoaded, userId]);
   return (

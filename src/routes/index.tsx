@@ -14,6 +14,7 @@ import HomePage from "@/pages/HomePage";
 import RegisterPage from "@/pages/RegisterPage";
 import LoginPage from "@/pages/LoginPage";
 import AuthSyncPage from "@/pages/AuthSyncPage";
+import NotesyPage from "@/pages/NotesyPage";
 
 /**
  * layouts
@@ -50,6 +51,12 @@ const rootRouteChildren: RouteObject[] = [
         element: <AuthSyncPage />,
     }
 ];
+const appRouteChildren: RouteObject[]= [
+    {
+        path: '/app/notesyai',
+        element: <NotesyPage />,
+    },
+];
 
 const router = createBrowserRouter([{
     path: '/',
@@ -60,7 +67,8 @@ const router = createBrowserRouter([{
 },
 {
     path:'/app',
-    element: <AppLayout />
+    element: <AppLayout />,
+    children: appRouteChildren,
 }
 ]);
 
