@@ -7,7 +7,7 @@
 /**
  * Node modules
  */
-import { Calendar1, CircleCheck, CalendarDays, Inbox } from 'lucide-react';
+import { Calendar1, CircleCheck, CalendarDays, Inbox, Book, BookAIcon, Library, CloudDownload } from 'lucide-react';
 import { href } from 'react-router';
 
 export const SOCIAL_LINKS = [
@@ -27,24 +27,12 @@ export const SOCIAL_LINKS = [
 ] as const;
 
 export const SIDEBAR_LINKS = [
+
   {
-    href: '/app/inbox',
-    label: 'Inbox',
-    icon: Inbox,
+    href: '/app/downloads',
+    label: 'Downloads',
+    icon: CloudDownload,
   },
-  {
-    href: '/app/today',
-    label: 'Today',
-    icon: Calendar1,
-  },
-  {
-    href: '/app/upcoming',
-    label: 'Upcoming',
-    icon: CalendarDays,
-  },
-  {
-    href: '/app/completed',
-    label: 'Completed',
-    icon: CircleCheck,
-  },
+ 
+
 ] as const;

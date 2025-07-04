@@ -23,7 +23,7 @@ const AppLayout = () => {
     <SidebarProvider>
       <SidebarTrigger />
         <div>AppLayout</div>
-      <AppSidebar />
+      <AppSidebar  />
       <Outlet />
     </SidebarProvider>
   );
