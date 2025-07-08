@@ -13,6 +13,7 @@ import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
 import Head from "@/components/Head";
 import { ArrowRight } from "lucide-react";
+import TrustedBy from "@/components/TrustedBy";
 
 const HomePage = () => {
   return (
@@ -26,24 +27,15 @@ const HomePage = () => {
             </h1>
             <div className="">
               <p className="text-center md:text-lg lg:text-xl font-light text-gray-700">Find study papers fast with our smart AI search.</p>
-            <p className="text-center text-sm text-gray-500">Trusted by students of 
-              <div className="flex justify-center mt-2">
-                <div className="flex ">
-                                <img src="/src/assets/RSU.png" alt="Rivers State University" className="h-6 inline-block ml-3 rounded-full ring-1 ring-gray-500 border-2 border-white object-cover" style={{zIndex:30}} />
-              <img src="/src/assets/UNP.webp" alt="University of Port-Harcourt" className="h-6 inline-block ml-0 rounded-full ring-1 ring-gray-500 border-2 border-white object-cover" style={{zIndex:20}} />
-              <img src="/src/assets/CVN.webp" alt="Covenant University" className="h-6 inline-block -ml-0 rounded-full ring-1 ring-gray-500 border-2 border-white object-cover" style={{zIndex:10}} />
-
-                </div>
-              </div>
-
-            </p>
-
+            <div className=" mt-2 flex justify-center mr-16">
+              <TrustedBy />
+            </div>
             </div>
             
             <div className="flex justify-center mt-3 ">
-              <Button asChild size='lg' className="relative overflow-hidden rounded-full group after:bg-white px-4 py-2 text-sm md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4">
+              <Button asChild size='lg' className="relative overflow-hidden rounded-half group after:bg-white px-4 py-2 text-sm md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4">
               <Link to='/register'className="relative flex items-center gap-1 z-10 transition-colors duration-300 group-hover:text-black group-hover:text-white">
-              <span className="k">Get Started</span>
+              <span className="font-light">Get Started</span>
               <ArrowRight className="ml-2 h-4 w-4 transition-colors duration-300  transform transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
