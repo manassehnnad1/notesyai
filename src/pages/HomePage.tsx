@@ -22,6 +22,12 @@ const HomePage = () => {
       <section>
         <div className="container !px-8 grid grid-cols-1 gap-8 items-center mx-auto">
           <div className="pt-32 pb-10 space-y-4 md:space-y-7 lg:space-y-9">
+          <div className="flex justify-center mb-0">
+            <div className="flex items-center bg-white/80 border border-gray-200 rounded-full shadow-sm px-4 py-1 w-fit">
+              <svg className="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <span className="text-gray-700 font-medium text-sm whitespace-nowrap">notesy.ai v1</span>
+            </div>
+          </div>
             <h1 className="text-center text-2xl pt-10  md:text-2xl lg:text-3xl font-light text-gray-700">
                Past papers and notes <br /> with <span className=" font-light text-gray-500">[AI precision]</span>
             </h1>
