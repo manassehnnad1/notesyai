@@ -15,12 +15,22 @@ import Head from "@/components/Head";
 import { ArrowRight } from "lucide-react";
 import TrustedBy from "@/components/TrustedBy";
 
+/**
+ * 
+ * Assets
+ */
+
+import notebookMain from "@/assets/notebookmain.png";
+
+
+
+
 const HomePage = () => {
   return (
     <>
       <Head title="Notesy.ai - Study papers search with AI precision" />
       <section>
-        <div className="container !px-8 grid grid-cols-1 gap-8 items-center mx-auto">
+        <div className="container !px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mx-auto">
           <div className="pt-32 pb-10 space-y-4 md:space-y-7 lg:space-y-9">
           <div className="flex justify-center mb-0">
             <div className="flex items-center bg-white/80 border border-gray-200 rounded-full shadow-sm px-4 py-1 w-fit">
@@ -47,6 +57,9 @@ const HomePage = () => {
             </Button>
             </div>
             
+          </div>
+          <div className="hidden md:flex justify-end pr-60 mt-2">
+            <img src={notebookMain} alt="Notebook main badge" className="max-w-xs w-full h-auto rounded-xl shadow" />
           </div>
         </div>
       </section>
