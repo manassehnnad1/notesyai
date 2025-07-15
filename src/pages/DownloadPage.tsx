@@ -6,10 +6,10 @@
 
 
 
-const NotesyPage = () => {
+const DownloadPage = () => {
   return (
-    <div>NotesyPage</div>
+    <div>DownloadPage</div>
   )
 }
 
-export default NotesyPage;
+export default DownloadPage;

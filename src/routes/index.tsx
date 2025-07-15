@@ -14,7 +14,7 @@ import HomePage from "@/pages/HomePage";
 import RegisterPage from "@/pages/RegisterPage";
 import LoginPage from "@/pages/LoginPage";
 import AuthSyncPage from "@/pages/AuthSyncPage";
-import NotesyPage from "@/pages/NotesyPage";
+import DownloadPage from "@/pages/DownloadPage";
 
 /**
  * layouts
@@ -53,8 +53,8 @@ const rootRouteChildren: RouteObject[] = [
 ];
 const appRouteChildren: RouteObject[]= [
     {
-        path: '/app/notesyai',
-        element: <NotesyPage />,
+        path: '/app/downloads',
+        element: <DownloadPage />,
     },
 ];
 
