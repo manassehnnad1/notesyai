@@ -20,9 +20,9 @@ const RootErrorBoundary = () => {
     <div className="min-h-[100dvh] flex flex-col">
         <Header />
 
-        <div className="grow container flex flex-col justify-center items-center pt-32 pb-12">
-            <h1 className="text-2xl  text-center ">
-                { isRouteErrorResponse(error) ? '' : 'An unexpected error occurred' }
+        <div className="grow container flex flex-col justify-center items-center pt-32 pb-12 ">
+            <h1 className="text-2xl  text-center mb-16 font-light text-gray-700">
+                { isRouteErrorResponse(error) ? 'Page doesn\'t exist' : 'An unexpected error occurred' }
             </h1>
 
             <p className="text-center mt-2">
@@ -34,9 +34,9 @@ const RootErrorBoundary = () => {
                 </Button>
             </div>
         </div>
-        <figure className="mb-10 mx-auto">
+        {/* <figure className="mb-10 mx-auto">
             <img src="/src/assets/404.jpg"  className="w-96 sm:w-128 md:w-160 h-auto mx-auto" alt="404, page not found" />
-        </figure>
+        </figure> */}
 
         <Footer />
     </div>

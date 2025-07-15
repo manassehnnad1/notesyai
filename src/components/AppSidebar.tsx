@@ -6,7 +6,7 @@
 
 import { Link } from "react-router";
 
-import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
+import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarMenuBadge } from "@/components/ui/sidebar";
 import { UserButton } from "@clerk/clerk-react";
 
 /**
@@ -19,9 +19,9 @@ import {SIDEBAR_LINKS} from "@/constants";
 const AppSidebar = () => {
   return (
     <Sidebar>
-      <SidebarHeader>
+      <SidebarHeader className="mb-16 ">
         <Link to="/notesyAI" >
-          <span className="text-lg font-special font-bold">notesy.ai</span>
+          <span className="text-lg-center font-special font-bold">notesy.ai</span>
         </Link>
        
       </SidebarHeader>
@@ -37,17 +37,20 @@ const AppSidebar = () => {
 
               {SIDEBAR_LINKS.map((item, index) => (
                 <SidebarMenuItem key={index}>
-                  <SidebarMenuButton>
+                  <SidebarMenuButton asChild>
+                    
                     <Link to={item.href}>
-                      <item.icon /> {item.label}
+                      <item.icon /> <span>{item.label}</span>
                     </Link>
                   </SidebarMenuButton>
+                  <SidebarMenuBadge>0</SidebarMenuBadge>
                 </SidebarMenuItem>
               ))}
 
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
       </SidebarContent>
       <SidebarFooter>
          <UserButton showName appearance={{
@@ -65,4 +68,4 @@ const AppSidebar = () => {
   )
 }
 
-export default AppSidebar
+export default AppSidebar;
