@@ -7,7 +7,7 @@
 /**
  * Node modules
  */
-import { Calendar1, CircleCheck, CalendarDays, Inbox, Book, BookAIcon, Library, CloudDownload } from 'lucide-react';
+import {  CloudDownload } from 'lucide-react';
 import { href } from 'react-router';
 
 export const SOCIAL_LINKS = [
@@ -16,13 +16,13 @@ export const SOCIAL_LINKS = [
         label: 'Email'
     },
     {
-      href:'',
-      label:'Telegram'
+      href:'https://github.com/manassehnnad1/notebase',
+      label:'GitHub'
     },
   
   {
-    href: 'https://github.com/manassehnnad1',
-    label: 'GitHub',
+    href: '',
+    label: 'Pricing',
   },
 ] as const;
 

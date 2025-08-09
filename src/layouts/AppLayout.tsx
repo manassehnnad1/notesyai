@@ -17,7 +17,7 @@ import { Outlet } from "react-router";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 import AppSidebar from "@/components/AppSidebar";
-import ChatContainer from "@/components/chatContainer";
+import ChatContainer from "@/components/ChatContainer";
 
 const AppLayout = () => {
   return (
@@ -26,8 +26,9 @@ const AppLayout = () => {
         <SidebarTrigger />
         <AppSidebar  />
         <Outlet />
+        <ChatContainer />
       </SidebarProvider>
-      <ChatContainer />
+      
     </>
   );
 }

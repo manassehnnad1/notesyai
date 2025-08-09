@@ -8,22 +8,28 @@ import { Link } from "react-router";
 
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarMenuBadge } from "@/components/ui/sidebar";
 import { UserButton } from "@clerk/clerk-react";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import  { Collapsible, CollapsibleTrigger, CollapsibleContent  } from "@/components/ui/collapsible";
+
+
+
 
 /**
  * Assets
  */
 
-import {  MessageCirclePlus } from "lucide-react";
+import {   SquarePen } from "lucide-react";
 import {SIDEBAR_LINKS} from "@/constants";
 
 const AppSidebar = () => {
   return (
     <Sidebar>
-      <SidebarHeader className="mb-16 ">
-        <Link to="/notesyAI" >
-          <span className="text-lg-center font-special font-bold">notesy.ai</span>
+      <SidebarHeader className="mb-16">
+        <Link to="/">
+          <div className="flex items-center gap-2">
+            <span className="text-lg font-special font-bold">notesy.ai</span>
+          </div>
         </Link>
-       
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
@@ -31,7 +37,8 @@ const AppSidebar = () => {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton>
-                  <MessageCirclePlus /> New chat
+                  <SquarePen size={28} className="mr-2" />
+                  <span className="text-lg">New chat</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -40,7 +47,7 @@ const AppSidebar = () => {
                   <SidebarMenuButton asChild>
                     
                     <Link to={item.href}>
-                      <item.icon /> <span>{item.label}</span>
+                      <item.icon /> <span className="text-lg pl-2">{item.label}</span>
                     </Link>
                   </SidebarMenuButton>
                   <SidebarMenuBadge>0</SidebarMenuBadge>

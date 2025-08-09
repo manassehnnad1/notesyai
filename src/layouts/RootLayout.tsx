@@ -36,7 +36,7 @@ const RootLayout = () => {
 
              { isLoading && ( 
               <div className="fixed top-0 left-0 z-50 h-[100dvh] bg-background flex flex-col justify-center items-center gap-5">
-                  <img src='Logo' width={64} height={64} alt="Notesy.ai" />
+                  <img src="./src/assets/"width={64} height={64} alt="Notesy.ai" />
                   <Loader2  className="text-muted-foreground animate-spin"/>
               </div>
             )}  
