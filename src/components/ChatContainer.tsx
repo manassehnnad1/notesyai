@@ -6,13 +6,16 @@
 
 
 import { SendHorizonal } from "lucide-react"; 
+import ModelSwitch from "./ModelSwitch";
 
 const ChatGPTLanding = () => (
-  <div className="ml-80 mt-16 min-h-screen flex flex-col items-center justify-center bg-white text-center">
-    <div className="text-3xl font-bold mb-2">Introducing Notesy.ai</div>
-    <div className="text-gray-600 mb-8 text-center max-w-md">
-      Get Past exam papers for your university, summarise your bulky notes and take exam pop quizzes with notesy - all you have to do is ask
-    </div>
+  <>
+    <ModelSwitch />
+    <div className="ml-80 mt-16 min-h-screen flex flex-col items-center justify-center bg-white text-center">
+      <div className="text-3xl font-bold mb-2">Introducing Notesy.ai</div>
+      <div className="text-gray-600 mb-8 text-center max-w-md">
+        Get Past exam papers for your university, summarise your bulky notes and take exam pop quizzes with notesy - <span className="italic">all you have to do is ask</span>
+      </div>
     <div className="w-full max-w-xl flex items-center justify-center bg-gray-100 rounded-full px-4 py-2 shadow mb-8 mx-auto">
       <button className="mr-2 text-gray-500 text-xl font-bold">+</button>
       <input
@@ -29,6 +32,7 @@ const ChatGPTLanding = () => (
       <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold">Get Plus</button>
     </div>
   </div>
+  </>
 );
 
 export default ChatGPTLanding;

@@ -25,11 +25,6 @@ const AppSidebar = () => {
   return (
     <Sidebar>
       <SidebarHeader className="mb-16">
-        <Link to="/">
-          <div className="flex items-center gap-2">
-            <span className="text-lg font-special font-bold">notesy.ai</span>
-          </div>
-        </Link>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
