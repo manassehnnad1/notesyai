@@ -1,9 +1,9 @@
-
+import { Link } from "react-router"
 
 const ModelSwitch = () => {
   return (
    <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-10">
-  <span className="text-sm text-black ">notesyai</span>
+<Link to='/'> <span className="text-muted-foreground text-sm ml-8 cursor-pointer ">notesy.ai</span></Link>
 </div>
   )
 }

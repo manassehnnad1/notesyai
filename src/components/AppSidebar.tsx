@@ -33,7 +33,7 @@ const AppSidebar = () => {
               <SidebarMenuItem>
                 <SidebarMenuButton>
                   <SquarePen size={28} className="mr-2" />
-                  <span className="text-lg">New chat</span>
+                  <span className="text-md">New chat</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -42,7 +42,7 @@ const AppSidebar = () => {
                   <SidebarMenuButton asChild>
                     
                     <Link to={item.href}>
-                      <item.icon /> <span className="text-lg pl-2">{item.label}</span>
+                      <item.icon /> <span className="text-md pl-2">{item.label}</span>
                     </Link>
                   </SidebarMenuButton>
                   <SidebarMenuBadge>0</SidebarMenuBadge>
