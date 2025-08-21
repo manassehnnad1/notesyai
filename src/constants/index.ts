@@ -7,7 +7,7 @@
 /**
  * Node modules
  */
-import {  CloudDownload } from 'lucide-react';
+import {  Library} from 'lucide-react';
 import { href } from 'react-router';
 
 export const SOCIAL_LINKS = [
@@ -21,7 +21,7 @@ export const SOCIAL_LINKS = [
     },
   
   {
-    href: '',
+    href: '/pricing',
     label: 'Pricing',
   },
 ] as const;
@@ -29,9 +29,9 @@ export const SOCIAL_LINKS = [
 export const SIDEBAR_LINKS = [
 
   {
-    href: '/app/downloads',
-    label: 'Downloads',
-    icon: CloudDownload,
+    href: '/app/papers',
+    label: 'Past papers',
+    icon: Library,
   },
  
 
