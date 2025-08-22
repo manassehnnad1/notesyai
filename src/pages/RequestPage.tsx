@@ -6,10 +6,10 @@
 
 
 
-const DownloadPage = () => {
+const RequestPage = () => {
   return (
-    <div>DownloadPage</div>
+    <div>Request papers</div>
   )
 }
 
-export default DownloadPage;
+export default RequestPage;
