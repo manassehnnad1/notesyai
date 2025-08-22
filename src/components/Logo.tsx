@@ -4,17 +4,16 @@
  * @description Assets for the app
  */
 
-import { logo, pager } from "@/assets/";
+
+import { Cloud } from "lucide-react";
 
 
 
 const Logo = () => {
   return (
     <div className="flex items-center gap-3 font-semibold text-lg ">
-      <img src={ logo}
-      alt="notecloud"
-      className="w-7 h-7" /><span className="font-special"> notesy.ai</span>
-     
+      <Cloud className="w-5 h-5 -mr-2  mt-1" /><span className="font-special"> notesyai</span>
+
     </div>
   )
 }

@@ -8,8 +8,7 @@ import { Link } from "react-router";
 
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarMenuBadge } from "@/components/ui/sidebar";
 import { UserButton } from "@clerk/clerk-react";
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
-import  { Collapsible, CollapsibleTrigger, CollapsibleContent  } from "@/components/ui/collapsible";
+
 
 
 
@@ -18,7 +17,7 @@ import  { Collapsible, CollapsibleTrigger, CollapsibleContent  } from "@/compone
  * Assets
  */
 
-import {   SquarePen } from "lucide-react";
+import {   SquarePen, Library } from "lucide-react";
 import {SIDEBAR_LINKS} from "@/constants";
 
 const AppSidebar = () => {
@@ -32,8 +31,8 @@ const AppSidebar = () => {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton>
-                  <SquarePen size={28} className="mr-2" />
-                  <span className="text-md">New chat</span>
+                  <Library size={28} className="mr-2" />
+                  <span className="text-md">Past papers</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -45,7 +44,7 @@ const AppSidebar = () => {
                       <item.icon /> <span className="text-md pl-2">{item.label}</span>
                     </Link>
                   </SidebarMenuButton>
-                  <SidebarMenuBadge>0</SidebarMenuBadge>
+                  
                 </SidebarMenuItem>
               ))}
 
