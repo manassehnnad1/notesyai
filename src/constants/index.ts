@@ -7,7 +7,7 @@
 /**
  * Node modules
  */
-import {  Library} from 'lucide-react';
+import {  Cloud } from 'lucide-react';
 import { href } from 'react-router';
 
 export const SOCIAL_LINKS = [
@@ -15,23 +15,26 @@ export const SOCIAL_LINKS = [
         href: '',
         label: 'Email'
     },
-    {
-      href:'https://github.com/manassehnnad1/notebase',
-      label:'GitHub'
+       {
+        href: '',
+        label: 'Privacy policy'
     },
-  
   {
     href: '/pricing',
     label: 'Pricing',
   },
+     {
+        href: '',
+        label: 'Terms'
+    },
 ] as const;
 
 export const SIDEBAR_LINKS = [
 
   {
-    href: '/app/papers',
-    label: 'Past papers',
-    icon: Library,
+    href: '/app/requests',
+    label: 'Request',
+    icon: Cloud,
   },
  
 

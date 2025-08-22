@@ -14,13 +14,14 @@ import HomePage from "@/pages/HomePage";
 import RegisterPage from "@/pages/RegisterPage";
 import LoginPage from "@/pages/LoginPage";
 import AuthSyncPage from "@/pages/AuthSyncPage";
-import DownloadPage from "@/pages/DownloadPage";
+import PricingPage from "@/pages/PricingPage";
 
 /**
  * layouts
  */
 import RootLayout from "@/layouts/RootLayout";
 import AppLayout from "@/layouts/AppLayout";
+import BlankLayout from "@/layouts/BlankLayout";
 
 /**
  * Types
@@ -33,6 +34,7 @@ import type { RouteObject } from "react-router";
 
 import RootErrorBoundary from "@/pages/RootErrorBoundary";
 import App from "@/App";
+import RequestPage from "@/pages/RequestPage";
 const rootRouteChildren: RouteObject[] = [
     {
         index: true,
@@ -53,8 +55,8 @@ const rootRouteChildren: RouteObject[] = [
 ];
 const appRouteChildren: RouteObject[]= [
     {
-        path: '/app/downloads',
-        element: <DownloadPage />,
+        path: '/app/requests',
+        element: <RequestPage />,
     },
 ];
 
@@ -69,7 +71,27 @@ const router = createBrowserRouter([{
     path:'/app',
     element: <AppLayout />,
     children: appRouteChildren,
-}
+},
+{
+    path: '/pricing',
+    element: <BlankLayout />, 
+    children: [
+      {
+        index: true,
+        element: <PricingPage />
+      }
+    ]
+  },
+  {
+    path: '/requests',
+    element: <BlankLayout />, 
+    children: [
+      {
+        index: true,
+        element: <RequestPage />
+      }
+    ]
+  },
 ]);
 
 export default router;

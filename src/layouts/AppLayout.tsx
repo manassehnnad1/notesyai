@@ -24,7 +24,7 @@ const AppLayout = () => {
   return (
     <>
       <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-10">
-        <span className="text-2xl font-semibold text-white">ChatGPT</span>
+        <span className="text-2xl font-semibold text-white">Notesyai</span>
       </div>
       <SidebarProvider>
         <SidebarTrigger />
