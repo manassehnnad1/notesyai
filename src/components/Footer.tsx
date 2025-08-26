@@ -10,9 +10,9 @@ import { SOCIAL_LINKS } from "@/constants/index";
 
 const Footer = () => {
   return (
-    <footer className="p-4 pb-0">
-      <div className="container min-h-16 py-4 bg-black border border-b-0 rounded-t-xl flex flex-col gap-3 items-center lg:flex-row lg:justify-between">
-        <p className="text-center text-sm text-white">&copy; 2025 notesyai</p>
+    <footer className="p-4 pb-0 font-mono">
+      <div className="container min-h-16 py-4 bg-black border border-b-0  flex flex-col gap-3 items-center lg:flex-row lg:justify-between ">
+        <p className="text-center text-sm text-white font-light">&copy; 2025 notesyai</p>
 
         <ul className="flex flex-wrap items-center">
           {SOCIAL_LINKS.map(({href, label}, index)=> (
