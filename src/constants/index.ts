@@ -12,21 +12,23 @@ import { href } from 'react-router';
 
 export const SOCIAL_LINKS = [
     {
-        href: '',
-        label: 'Email'
+        href: 'mailto:manasseh525@gmail.com',
+        label: 'Contact'
     },
-       {
-        href: '',
-        label: 'Privacy policy'
-    },
+       
   {
     href: '/pricing',
     label: 'Pricing',
   },
-     {
-        href: '',
-        label: 'Terms'
-    },
+  {
+    href: '',
+    label: 'Support',
+  },
+  {
+    href: 'https://medium.com/',
+    label: 'Blog',
+  },
+    
 ] as const;
 
 export const SIDEBAR_LINKS = [

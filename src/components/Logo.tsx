@@ -12,7 +12,7 @@ import { Cloud } from "lucide-react";
 const Logo = () => {
   return (
     <div className="flex items-center gap-3 font-semibold text-lg ">
-      <Cloud className="w-5 h-5 -mr-2  mt-1" />
+      <Cloud className="w-6 h-6  -mr-2  mt-1" />
 
     </div>
   )

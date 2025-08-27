@@ -13,7 +13,7 @@ import { Link } from "react-router";
 
 import { Button } from "@/components/ui/button";
 import Head from "@/components/Head";
-import {Bot, CloudDownload, MoveUpRight} from 'lucide-react';
+import {Bot, MoveUpRight,  Download} from 'lucide-react';
 
 
 
@@ -32,17 +32,18 @@ const HomePage = () => {
           AI-assisted search
         </div>
         <div className="rounded-full border border-gray-300 bg-white text-black font-medium px-5 py-2 shadow-none flex items-center gap-2 text-sm select-none">
-          <CloudDownload className="w-5 h-5 text-gray-500" />
+          <Download className="w-4 h-4   text-gray-500" />
           Download hyperlinks
         </div>
       </div>
 
       <div className="flex items-center justify-center mt-0">
-        <Button variant="outline" className="rounded-full border-2 border-gray-200 bg-white text-black font-semibold px-7 py-2 shadow-none font-mono">
+        <Button variant="outline" className="rounded-full    bg-black text-white font-semibold px-6 py-6 shadow-none font-mono">
           <Link to="/register">Get Started </Link><MoveUpRight className="w-4 h-4 ml-0" />
         </Button>
         
       </div>
+      <img src="" alt="" />
 
     </main>
   );
