@@ -25,7 +25,7 @@ const Header = () => {
         <nav className="flex items-center gap-8">
           <Link to="/login" className="text-lg font-semibold text-black hover:text-gray-500">Log in</Link>
           <Button asChild className="rounded-full bg-black text-white text-lg font-bold px-6 py-6 shadow-none hover:bg-gray-900 transition-colors">
-            <Link to="/register">Join for free</Link>
+            <Link to="/register">Get started</Link>
           </Button>
         </nav>
       </div>
